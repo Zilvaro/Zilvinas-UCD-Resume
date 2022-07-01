@@ -16,8 +16,7 @@
         </script>
         <script type="text/javascript">
             (function () {
-                emailjs.init("9M-L4AbTUUBwJTx_T");
-                emailjs.send("service_m8470bu","template_n6mvt8l",{name: 'James', notes: 'The project that I want is...'});                
+                emailjs.init("9M-L4AbTUUBwJTx_T");                
             })();
         </script>
     </head>
@@ -46,14 +45,14 @@
                                     <a href="resume.html" class="hvr-fade"><i class="fa-solid fa-graduation-cap"
                                             aria-hidden="true"></i><span>Resume</span></a>
                                 </li>
-                                <li class="col-xs-6 col-sm-3 ui-menu-color-github list-inline-item menuitem">
-                                    <a href="github.html" class="hvr-fade"><i class="fa-brands fa-github"
-                                            aria-hidden="true"></i><span>Github</span></a>
-                                </li>
                                 <li class="col-xs-6 col-sm-3 ui-menu-color-download list-inline-item menuitem">
                                     <a href="assets/cv/Zilvinas Kucinskas_digital_ecommerce.pdf" target="_blank"
                                         class="hvr-fade"><i class="fa-solid fa-download"
                                             aria-hidden="true"></i><span>Download CV</span></a>
+                                </li>
+                                <li class="col-xs-6 col-sm-3 ui-menu-color-github list-inline-item menuitem">
+                                    <a href="github.html" class="hvr-fade"><i class="fa-brands fa-github"
+                                            aria-hidden="true"></i><span>Github</span></a>
                                 </li>
                         </div>
 
@@ -69,7 +68,7 @@
                     <h5 class="uppercase text-center">Let's work together!</h5>
 
                     <div class="center-form">
-                        <form>
+                        <form onsubmit="return sendMail(this);">
                             <input type="text" name="name" id="fullname" class="form-control" placeholder="Name"
                                 required />
                             <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email"
@@ -130,6 +129,7 @@
         <script src="https://kit.fontawesome.com/3d1bfe7fc5.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="assets/js/sendEmail.js"></script>
     </body>
 
     </html>
